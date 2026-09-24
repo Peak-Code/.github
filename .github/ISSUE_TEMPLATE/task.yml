@@ -1,0 +1,39 @@
+name: Task
+description: Work that isn't a bug or a feature (refactoring, chores, docs, tests, CI)
+title: "[Task]: "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of work
+      description: Matches our commit types, so the PR title is easy to pick.
+      options:
+        - refactor
+        - test
+        - docs
+        - chore
+        - build
+        - ci
+        - perf
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What needs to be done?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      description: A checklist. When every box can be ticked, the task is done.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...

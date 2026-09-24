@@ -1,0 +1,54 @@
+name: Bug report
+description: Something doesn't work as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. The more precise the steps, the faster it gets fixed.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem in a few sentences.
+      placeholder: When I search for a user with an email filter, the list comes back empty.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps that always trigger the problem.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See the error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did you see it?
+      options:
+        - Local
+        - Staging
+        - Production
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit (if known)
+      placeholder: e.g. 1.2.0 or a83f21c
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, logs or request/response
+      description: Drag and drop files here. Remove any passwords, tokens or personal data first.

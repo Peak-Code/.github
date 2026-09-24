@@ -1,0 +1,38 @@
+name: Feature request
+description: New behavior for users of the product
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the need first, the solution second. "Acceptance criteria" tells us when it is done.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are we solving, and for whom?
+      placeholder: Users can't tell which people are new, so they re-check the same profiles.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What should it do?
+      description: Describe the behavior you want, not how to build it.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: A checklist. When every box can be ticked, the feature is done.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or notes (optional)
+      description: Other options you considered, links, mockups.
