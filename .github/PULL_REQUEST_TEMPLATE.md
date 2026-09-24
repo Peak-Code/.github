@@ -14,4 +14,4 @@ Closes #
 - [ ] Docs updated if behavior changed
 - [ ] Database migrations (if any) are included and tested
 
-<!-- Reminder: the PR title must look like `feat(properties): add search` (checked automatically). -->
+<!-- Reminder: the PR title must look like `feat(users): add search` (checked automatically). -->
